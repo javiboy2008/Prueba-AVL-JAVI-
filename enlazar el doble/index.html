@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="card">
+            <h2>Formulario 1: Contacto</h2>
+            <form action="guardar_contactos.php" method="POST">
+                <div class="campo">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label>Correo:</label>
+                    <input type="email" name="correo" required>
+                </div>
+                <div class="campo">
+                    <label>Mensaje:</label>
+                    <textarea name="mensaje" required></textarea>
+                </div>
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Formulario 2: Dirección</h2>
+            <form action="guardar_direccion.php" method="POST">
+                <div class="campo">
+                    <label>Dirección:</label>
+                    <input type="text" name="direccion" required>
+                </div>
+                <div class="campo">
+                    <label>CP:</label>
+                    <input type="text" name="cp" required>
+                </div>
+                <div class="campo">
+                    <label>Género:</label>
+                    <input type="text" name="genero" required>
+                </div>
+                <div class="campo">
+                    <label>Comentario:</label>
+                    <textarea name="comentario" required></textarea>
+                </div>
+                <button type="submit" class="btn-direccion">Guardar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
